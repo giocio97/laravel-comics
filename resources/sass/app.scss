@@ -1,0 +1,155 @@
+$color_blue: rgb(2, 130, 249);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        width: 70px;
+        margin: 10px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+
+    li {
+        display: inline-block;
+
+        a {
+            color: rgb(70, 70, 100);
+            text-decoration: none;
+            padding: 0 10px;
+
+            &.active {
+                color: $color_blue;
+                padding-bottom: 36px;
+                border-bottom: 3px solid $color_blue;
+            }
+
+            &:hover {
+                color: $color_blue;
+            }
+        }
+    }
+}
+
+.comics-content {
+    background-color: rgb(28, 28, 28);
+    color: white;
+
+    #jumbotron {
+        background-image: url("/img/jumbotron.jpg");
+        height: 300px;
+        background-size: cover;
+    }
+
+    .label {
+        background-color: $color_blue;
+        padding: 10px;
+        display: inline-block;
+        margin-top: -30px;
+    }
+
+    .my_container {
+        background-color: rgb(28, 28, 28);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cards_container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 15%;
+        padding: 25px;
+
+        img {
+            width: 200px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+
+        h4 {
+            background-color: $color_blue;
+            padding: 10px 40px;
+            margin: 20px;
+        }
+    }
+}
+
+.comics-link {
+    height: 150px;
+    background-color: rgb(2, 130, 249);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        width: auto;
+        height: 70px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+}
+
+footer {
+    background-image: url("/img/footer-bg.jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+
+    figure{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+      }
+}
+
+.social-footer{
+    height: 70px;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .my_button{
+        display: inline-block;
+        border: 2px solid $color_blue;
+        padding: 5px;
+        color: white;
+      }
+
+      .icon_social{
+        color: $color_blue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img{
+          margin: 0 10px;
+        }
+      }
+}

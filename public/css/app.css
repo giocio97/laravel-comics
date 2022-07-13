@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header img {
+    width: 70px;
+    margin: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 20px 0;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  ul li a {
+    color: rgb(70, 70, 100);
+    text-decoration: none;
+    padding: 0 10px;
+  }
+
+  ul li a.active {
+    color: rgb(2, 130, 249);
+    padding-bottom: 36px;
+    border-bottom: 3px solid rgb(2, 130, 249);
+  }
+
+  ul li a:hover {
+    color: rgb(2, 130, 249);
+  }
+
+  .comics-content {
+    background-color: rgb(28, 28, 28);
+    color: white;
+  }
+
+  .comics-content #jumbotron {
+    background-image: url("/img/jumbotron.jpg");
+    height: 300px;
+    background-size: cover;
+  }
+
+  .comics-content .label {
+    background-color: rgb(2, 130, 249);
+    padding: 10px;
+    display: inline-block;
+    margin-top: -30px;
+  }
+
+  .comics-content .my_container {
+    background-color: rgb(28, 28, 28);
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .comics-content .cards_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .comics-content .cards {
+    width: 15%;
+    padding: 25px;
+  }
+
+  .comics-content .cards img {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .comics-content .button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .comics-content .button h4 {
+    background-color: rgb(2, 130, 249);
+    padding: 10px 40px;
+    margin: 20px;
+  }
+
+  .comics-link {
+    height: 150px;
+    background-color: rgb(2, 130, 249);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .comics-link img {
+    width: auto;
+    height: 70px;
+  }
+
+  .comics-link a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+
+  footer {
+    background-image: url("/img/footer-bg.jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer figure {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .social-footer {
+    height: 70px;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .social-footer .my_button {
+    display: inline-block;
+    border: 2px solid rgb(2, 130, 249);
+    padding: 5px;
+    color: white;
+  }
+
+  .social-footer .icon_social {
+    color: rgb(2, 130, 249);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .social-footer .icon_social img {
+    margin: 0 10px;
+  }
+
