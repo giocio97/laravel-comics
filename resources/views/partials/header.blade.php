@@ -1,5 +1,5 @@
 <header>
-    <a href="">
+    <a href="{{ route('home') }}">
         <img src="{{ asset('img/dc-logo.png') }}" alt="Logo DC">
     </a>
     <nav>

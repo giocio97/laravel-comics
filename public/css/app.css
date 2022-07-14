@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
   header {
     display: flex;
     justify-content: space-around;
@@ -58,10 +62,98 @@
     margin-top: -30px;
   }
 
+  .comics-content .label_bg {
+    background-color: rgb(2, 130, 249);
+    height: 80px;
+  }
+
+  .comics-content .label_bg .label_thumb {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .comics-content .label_bg .label_thumb img {
+    width: 150px;
+    margin-top: -170px;
+  }
+
   .comics-content .my_container {
     background-color: rgb(28, 28, 28);
     width: 80%;
     margin: 0 auto;
+  }
+
+  .comics-content .comic_container_bg {
+    background-color: white;
+    color: black;
+  }
+
+  .comics-content .comic_container_bg .flex_container {
+    display: flex;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .comics-content .comic_container_bg .comic_container h2 {
+    color: #003F5E;
+  }
+
+  .comics-content .comic_container_bg .price_available {
+    background-color: #55BA59;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: 10px 0;
+  }
+
+  .comics-content .comic_container_bg .desc {
+    max-width: 80%;
+    color: gray;
+    margin: 20px 0;
+  }
+
+  .comics-content .comic_container_bg .adv_container {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .comics-content .comic_container_bg .container_spec {
+    background-color: #F6F6F6;
+    border-top: 1px solid darkgray;
+  }
+
+  .comics-content .comic_container_bg .container_spec a {
+    text-decoration: none;
+  }
+
+  .comics-content .comic_container_bg .container_spec h2 {
+    color: #003F5E;
+    margin: 20px 0;
+  }
+
+  .comics-content .comic_container_bg .container_spec h5 {
+    display: inline-block;
+    color: #003F5E;
+  }
+
+  .comics-content .comic_container_bg .container_spec .talent {
+    width: 60%;
+  }
+
+  .comics-content .comic_container_bg .container_spec .desc_talent {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .comics-content .comic_container_bg .container_spec .spec {
+    width: 35%;
+    margin-left: 50px;
+  }
+
+  .comics-content .comic_container_bg .container_spec .spec a {
+    text-decoration: none;
   }
 
   .comics-content .cards_container {
@@ -152,4 +244,3 @@
   .social-footer .icon_social img {
     margin: 0 10px;
   }
-

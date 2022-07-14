@@ -24,3 +24,27 @@ Route::get('/', function () {
 
     ]);
 })->name('home');
+
+Route::get('/comic/{id}', function ($id) {
+    $arrNav = config('navlink');
+    $arrLinks = config('linkscomic');
+    $comic = null;
+    foreach (config('comics') as $value) {
+        if ($value['id'] == $id){
+            $comic = $value;
+            break;
+        }
+    }
+
+    if ($comic) {
+        return view('comic', [
+            'arrNav' => $arrNav,
+            'arrLinks' => $arrLinks,
+            'comic' => $comic,
+        ]);
+    } else {
+        abort(404);
+    }
+
+})->name('comic');
+

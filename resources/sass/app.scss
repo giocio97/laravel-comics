@@ -6,6 +6,10 @@ $color_blue: rgb(2, 130, 249);
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -59,11 +63,102 @@ ul {
         margin-top: -30px;
     }
 
+    .label_bg {
+        background-color: $color_blue;
+        height: 80px;
+
+        .label_thumb {
+            width: 60%;
+            margin: 0 auto;
+
+            img {
+                width: 150px;
+                margin-top: -170px;
+            }
+        }
+    }
+
     .my_container {
         background-color: rgb(28, 28, 28);
         width: 80%;
         margin: 0 auto;
     }
+
+    .comic_container_bg {
+        background-color: white;
+        color: black;
+
+        .flex_container{
+            display: flex;
+            max-width: 60%;
+            margin: 0 auto;
+        }
+
+        .comic_container {
+
+            h2{
+                color: #003F5E;
+            }
+        }
+
+        .price_available{
+            background-color: #55BA59;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 60%;
+            margin: 10px 0;
+        }
+
+        .desc{
+            max-width: 80%;
+            color: gray;
+            margin: 20px 0;
+        }
+
+        .adv_container{
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        .container_spec{
+            background-color: #F6F6F6;
+            border-top: 1px solid darkgray;
+            a{
+                text-decoration: none;
+            }
+
+            h2{
+                color: #003F5E;
+                margin: 20px 0;
+            }
+
+            h5{
+                display: inline-block;
+                color: #003F5E;
+            }
+
+            .talent{
+                width: 60%;
+            }
+
+            .desc_talent{
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+
+            .spec{
+                width: 35%;
+                margin-left: 50px;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
 
     .cards_container {
         display: flex;
@@ -121,35 +216,35 @@ footer {
     display: flex;
     justify-content: space-around;
 
-    figure{
+    figure {
         overflow: hidden;
         display: flex;
         align-items: center;
-      }
+    }
 }
 
-.social-footer{
+.social-footer {
     height: 70px;
     background-color: rgb(48, 48, 48);
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    .my_button{
+    .my_button {
         display: inline-block;
         border: 2px solid $color_blue;
         padding: 5px;
         color: white;
-      }
+    }
 
-      .icon_social{
+    .icon_social {
         color: $color_blue;
         display: flex;
         justify-content: space-around;
         align-items: center;
 
-        img{
-          margin: 0 10px;
+        img {
+            margin: 0 10px;
         }
-      }
+    }
 }
